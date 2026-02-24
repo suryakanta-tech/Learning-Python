@@ -77,6 +77,12 @@ print
 print(type(y)) # output = <class 'int'>
 
 
+# Quick Memory Trick: # Numbers → int, float
+                      # Text → str
+                      # Logic → bool
+                      # Collection → list, tuple, dict
+
+
 
 
 

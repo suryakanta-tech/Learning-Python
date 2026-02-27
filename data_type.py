@@ -253,7 +253,6 @@ print(a, type(a))
 print(b, type(b))
 print(c, type(c))
 
-
 # Q.14
 # create a dictionary:
 # student details: name → your name

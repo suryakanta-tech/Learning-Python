@@ -137,3 +137,141 @@ my_info  = {
 print(my_info)
 # now print only the name.
 print(my_info["name"])
+
+
+# Q.5
+# convert "100" into integer and multiple by 2.
+
+a = int("100")
+print(a*2) # 200
+
+
+# Q.6
+# create a list containing: 10, 3.5, "Python", True
+# Print the datatype of each element.
+
+list = [10,3.5,"Python",True]
+print(type(list[0]))
+print(type(list[1]))
+print(type(list[2]))
+print(type(list[3]))
+
+
+# Q.7
+# Create a tuple with 5 numbers and print: first element & last element
+
+number = (10,20,30,40,50)
+print(number[0])
+print(number[4])
+
+
+# Q.8
+# Create dictionary:
+   #  name → your name
+   #  age → your age 
+   # course → Python
+# print olny course.
+
+dict = {
+    "name":"Surya",
+    "age":20,
+    "course":"Python"
+}
+print(dict['course'])
+
+
+# Q.9
+# a = "25"
+# b = "5"
+# Convert both into integers and print: a devided by b
+
+a = int("25")
+b = int("5")
+print(a/b)
+
+
+# Q.10
+# Convert these values into string:10,3.14,True and Print their types after conversion.
+
+a = str("10")
+b = str("3.14")
+c = str("True")
+print(type(a))
+print(type(b))
+print(type(c))
+
+
+# Q.11
+# Take name and age from user and store them in a dictionary:
+# Print datatype of:
+# dictionary
+# name value
+# age value
+
+dict = {
+    "name":"Surya",
+    "age":20,
+}
+print(dict)
+print(type(dict['name']))
+print(type(dict['age']))
+
+
+# Q.12
+# Create this list: data = [25, "Python", 3.14, False, [1,2,3]]
+# Your tasks: Print datatype of the whole list.
+# Print datatype of each element using indexing.
+# Print datatype of the last element’s first value.
+
+data = [25,"Python",3.14,False,[1,2,3]]
+print(type(data))
+
+print(type(data[0]))
+print(type(data[1]))
+print(type(data[2]))
+print(type(data[3]))
+print(type(data[4]))
+
+print(type(data[4][0]))
+
+
+# Q.13
+# Take input number from user:
+# Now: 
+# Convert it to int
+# Convert it to float
+# Convert it to string
+# Print all values with their types
+
+num = input("Enter your number: ")
+
+a = int(num)
+b = float(num)
+c = str(num)
+
+print(a, type(a))
+print(b, type(b))
+print(c, type(c))
+
+
+# Q.14
+# create a dictionary:
+# student details: name → your name
+                 # marks → list of 3 marks
+                 # passed → True/False
+# Tasks:
+# Print second mark.
+# Print datatype of marks.
+# Calculate total marks using list values.
+
+student_details = {
+    "name":"Surya",
+    "marks":[87,90,79],
+    "passsed":True
+}
+print(student_details['marks'][1])
+print(type(student_details['marks']))
+# print(student_details['marks'][0] + student_details['marks'][1] + student_details['marks'][2]  )
+print(sum(student_details["marks"]))
+
+

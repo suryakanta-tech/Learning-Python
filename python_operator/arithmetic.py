@@ -1,4 +1,4 @@
-# Python Operator Learning Section.
+# Python Arithmetic Operator Learning Section.
 
 
 a = 47

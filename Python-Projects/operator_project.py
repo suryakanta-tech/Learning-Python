@@ -1,4 +1,4 @@
-# project
+''' Project No.1 '''
 
 customer_name = "Suryakanta Pradhan"
 print("Customer Name: ",customer_name) # name of the customer
@@ -42,6 +42,29 @@ x = ('mobile' in item_list) # check this perticular item is present in the list
 y = ('speaker' not in item_list) # check this perticular item is not present in this list
 print("Mobile in item list: ",x)
 print("Speaker not in item list: ",y)
+
+
+
+''' Project No.2 '''
+
+# Employee Salary Calculator
+
+# create variable
+basic_salary = 50000
+bonus = 5000
+tax_percent = 3
+
+# calculate
+gross_salary = basic_salary + bonus
+tax_amount = (gross_salary * tax_percent) / 100
+net_salary = gross_salary - tax_amount
+
+print("Gross Salary:",gross_salary)
+print("Tax Amount:",tax_amount)
+print("Net Salary:",net_salary)
+
+print("High Salary:",net_salary >= 50000)
+
 
 
 

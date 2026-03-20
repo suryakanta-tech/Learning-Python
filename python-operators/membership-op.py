@@ -28,5 +28,4 @@ print('z' not in fruit) # True
 
 fruits_list = ['apple','banana','guava','grapes','watermelon']
 print('guava' not in fruits_list) # False
-print('jackfruit' not in fruits_list) # True
-
+print('jackfruit' not in fruits_list) #True

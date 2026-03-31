@@ -1,0 +1,130 @@
+
+                                                 📘 LESSON 1 — Getting Started + Variables & Data Types
+                                             =============================================================
+
+Step 1 — What is Python?
+==========================
+=Python is a programming language — a way to give instructions to a computer.
+
+Think of it like this:
+-------------------------
+You are the boss. Python is your assistant.You write instructions → Python executes them.
+
+Python is used for websites, data science, AI, automation, games — almost everything!
+
+
+Step 2 — First Python Program:
+======================================
+print("Hello World!") # output - Hello World
+
+### Let's find out what's happening here.
+-------------------------------------------
+| print | A built-in **function** that displays output on screen |
+| ( ) | Parentheses — you pass something **inside** them |
+| "Hello, World!" | A piece of text (called a **string**) |
+
+
+Step 3 — Variables
+=====================
+A variable is like a labelled box that stores a value.
+
+name = "Surya"
+age = 20
+city = "Bhubaneswar"
+
+print(name)   # Output: Surya
+print(age)    # Output: 20
+print(city)   # Output: Bhubaneswar
+
+### How it works:
+-------------------
+name = "Surya"
+ ↑         ↑
+box      value inside the box
+
+### Rules for naming variables:
+---------------------------------
+         Allowed
+        ---------
+1. My_name
+2. name1
+3. total_score
+4. NAME
+  
+        Not Alloewd
+       -------------
+1. my-name (no hyphens)
+2. 1age (can't start with number)
+3. total score (no spaces)
+4. class (no reserved keywords)
+
+
+Step 4 — Data Types
+======================
+Everything in Python has a type.
+ 
+The 4 basic types:
+--------------------
+1.name   = "Surya"     # str    → text (always in quotes)
+2.age    = 20          # int    → whole number
+3.height = 5.9         # float  → decimal number
+4.is_student = True    # bool   → True or False
+
+How to check the type of anything:
+------------------------------------
+print(type(name))        # <class 'str'>
+print(type(age))         # <class 'int'>
+print(type(height))      # <class 'float'>
+print(type(is_student))  # <class 'bool'>
+
+### Visual summary:
+---------------------
+"Hello"   →  str   (text, wrapped in quotes)
+42        →  int   (whole number, no quotes)
+3.14      →  float (decimal number)
+True      →  bool  (only True or False, capital T/F)
+
+
+Step 5 — Printing Variables Together
+=======================================
+name = "Surya"
+age = 20
+
+# Method 1: comma separated
+print("My name is", name, "and I am", age, "years old.")
+
+# Method 2: f-string (most modern, recommended)
+print(f"My name is {name} and I am {age} years old.")
+
+### Output:
+------------
+My name is Surya and I am 20 years old.
+My name is Surya and I am 20 years old.
+
+### Note:
+----------
+The f-string (f before the quote) lets you put variables directly inside {} — this is the cleanest way and what professionals use.
+
+
+✏️ Practice Exercises
+========================
+Try these yourself. Start simple:
+Exercise 1 — Easy: Create 3 variables: your name, your age, your favourite color. Print all three using an f-string.
+
+Exercise 2 — Medium: Create two number variables a = 10 and b = 3. Print their sum, difference, product.
+
+Exercise 3 — Think: What will this print? Guess first, then run it.
+pythonx = 5
+y = "5"
+print(type(x))
+print(type(y))
+print(x + x)
+
+
+
+
+
+
+
+
+

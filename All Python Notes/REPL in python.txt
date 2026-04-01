@@ -1,0 +1,18 @@
+What is REPL in python?
+
+It is the interactive shell to run short python code (one liner). 
+
+How to REPL?
+
+open terminal --> type py/python 
+
+REPL stands for Read Eval Print Loop
+
+This is only useful for writing one liner code or using it as a calculator.
+But for writing more lines code, it is not useful.
+
+
+Vscode : 
+
+
+

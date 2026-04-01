@@ -1,0 +1,42 @@
+Print with 'Sep' attribute :
+------------------------------
+a = 10
+b = 'Aptech'
+
+print(a, b)   # 10 Aptech
+
+print(a, b, sep="#") # 10#Aptech
+
+Print with object statement :
+-------------------------------
+obj = {
+    name : "Aptech",
+    location : 'Nayapalli',
+    course : ["Python", "MySQL", "Power BI"]
+}
+
+print(obj)
+
+print with string and variable list :
+---------------------------------------
+a = 10
+b = 15
+print("Sum of", a, b, "is ", a+b)
+
+Print with formatted string and {} operator :
+----------------------------------------------
+a = 10
+b = 15
+print("Sum of", a, b, "is ", a+b)
+
+print("Sum of {} and {} is {}".format(a, b, a+b))
+
+
+
+
+
+
+
+
+
+

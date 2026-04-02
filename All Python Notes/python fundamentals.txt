@@ -1,0 +1,162 @@
+Python Fundamental :
+=============================
+
+Indentation & whitespace :
+-----------------------------
+Every line in python should start from a common line. If there is a block, then the line inside the block should start with a whitespace.
+
+In python there is no semicolon to end a line, When a new line starts, it is considered that the previous line ended.
+
+Comments : 
+------------
+There are two types comments.
+
+1) Single-line (#)
+2) Multiline (''' '''/ """ """)
+
+When a line or more lines are commented, then interpreter ignores or skips them.
+
+
+Identifiers :
+---------------
+Any name/word used for variable, function, class and module is called identifiers
+
+rules :
+1) must contain a-z, A-Z, 0-9, _
+2) must not start with a digit
+3) must not be too lengthy. (meaningful and short)
+4) must not use a keyword as identifiers
+5) Case-sensitive 
+
+cash$ = 10  #invalid
+name = "Aptech"  #valid
+_hi = 90 #valid
+s#s = 'sos' #invalid 
+for = 10 #invalid
+For = 10 #valid
+
+
+Keywords :  
+-------------
+reserved words / 35
+
+A = 10
+a = 20
+
+
+Statements : 
+--------------
+Statement is an instruction to interpreter/computer. So in python, every line is a statement.
+
+In a python program, there may be group of statements.
+
+A statement is a combination of identifiers, operators, keywords, values etc.
+
+e.g. 
+
+name = 10+20
+
+for I in range(10):
+   print(I)
+
+
+
+
+Variables : variable is an identifier which stores a value.
+
+e.g. name = 'Aptech'
+     name = "Learning"
+
+The variable always hold the latest value assigned to it.
+
+Rules for declaring a variable : 
+
+The rules for Identifiers are also applicable for variable.
+
+1) variable must contain a-z, A-Z, 0-9, _
+
+2) variable must not start with a digit
+
+3) variable is case sensitive
+
+4) variable name can not be a keyword
+
+example : 
+
+name = "Aptech"
+
+* Single variable with a single value
+
+name = "Aptech"
+a = 10
+z = 1.234
+
+* Multiple variable with multiple values in a single line
+
+name, a, z = "Aptech", 10, 1.234
+
+note : the no. variables in left must be same no of values in right
+
+* Multiple values in a single variable
+
+fruits = ["Apple", "Banana", "Orange"]
+
+[a, b , c] = fruits
+
+print(a)
+print(b)
+print(c)
+
+------------
+fruits = ["Apple", "Banana", "Orange"]
+
+[a, *b ] = fruits
+print(a)
+print(b)
+
+note : It is called unpacking values from a variable
+
+#======================================================================
+Why python is considered as dynamic typed programming language ?
+
+When we assign a value to a variable, variable type automatically converted to the type of value assigned.
+This happens while we are running program. Hence it is called dynamic typed.
+
+
+In programming scope context, variable are two types
+
+1) local variable
+2) global variable
+
+A variable declared within a block is local to that block and it can not be accessed outside.
+
+A variable declared with global scope can be accessed anywhere.
+
+
+Example :  
+
+a = 20
+def welcome():
+   a = 10
+   print(a)
+
+welcome()
+print(a)
+ 
+#=================
+a = 20
+def welcome():
+   global a
+   a = 10
+   print(a)
+
+welcome()
+print(a)
+
+#=========================================================
+
+
+
+
+
+

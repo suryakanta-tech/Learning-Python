@@ -1,0 +1,92 @@
+print() :
+==========
+print() can be used for following types 
+
+1) to print a variable or a value
+
+a = "Aptech"
+
+print(a)  #Aptech
+
+or 
+
+print("Aptech") #Aptech
+
+2) to print a value and a variable combined
+
+a = "Aptech"
+print(a, "Learning") #Aptech Learning
+
+3) to print multiple variable
+
+a = "Aptech"
+b = "learning"
+print(a, b) #Aptech learning
+
+example :
+---------- 
+#Write a program to find sum of two numbers;
+
+num1 =int(input("Enter first number : ")) #10
+num2 =int(input("Enter second number : ")) #20
+
+print("Sum of ", num1, " and ", num2, " is ", num1+num2)
+
+#Sum of 10 and 20 is 30
+
+4) to print multiple string variable with "+" 
+
+a = "Aptech"
+b = "Learning"
+
+print(a+b)  #AptechLearning
+print(a+" "+b) #Aptech Learning
+
+5) to print variable with value and {}
+
+num1 =int(input("Enter first number : ")) #10
+num2 =int(input("Enter seond number : ")) #20
+
+print("Sum of {} and {} is {}".format(num1, num2, num1+num2))
+
+6) to print value or variable with end=""
+
+a = "Aptech"
+b = "Learning"
+
+print(a, end="")
+print(b)
+
+7) print with variable and sep=""
+
+a = "Aptech"
+b = "Learning"
+
+print(a,b, sep="/")
+
+
+8) print with variable, end="" and sep=""
+
+a, b, c, d= 10, 20, 30, 40
+
+print(a, b, c, end=" ", sep=",")
+print(d)
+
+9) print with %d, %f, %s
+
+%d = integer
+%f = floating point number
+%s = string
+
+a, b, c = 10, 20.5, "Aptech"
+
+print("%d, %f, %s" %(a, b, c))
+
+
+
+
+
+
+
+
+

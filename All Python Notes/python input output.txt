@@ -1,0 +1,5 @@
+input & output in python :
+=============================
+input() : This is used to feed input to a program. Takes input as a string. To convert string to number, we use int(), float()
+
+print() : This is used to give output from a program.

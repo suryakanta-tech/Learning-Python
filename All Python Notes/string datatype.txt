@@ -1,0 +1,239 @@
+String datatype :
+===================
+Anything that is enclosed with a single quote or double quote is considered as string.
+
+e.g.
+------
+a = 'aptech'
+
+b = "APTECH"
+
+print("Aptech")
+
+print(type(a)) #<class 'str'>
+print(type(b)) #<class 'str'>
+
+Quote within another quote :
+------------------------------
+a = 'Ram's House'
+
+b = "Aliva"s brother"
+
+Here both string are invalid, because we can not use single quote (') within another single quote (').
+And also we can not use double quote (") within  another doble quote (")
+
+a = 'Ram"s House'
+
+b = "Aliva's brother"
+
+Here both are valid now.
+
+
+multiline string :
+--------------------
+For assigning a multiline string to a varibale, we generally use  '''/ """.
+
+e.g.
+
+a = '''We are Learning Python Programming. 
+It is a part of Data Science Course.'''
+
+b = """We are Learning Python Programming. 
+It is a part of Data Science Course."""
+
+print(a)
+print(b)
+
+
+Escape Characters :
+-----------------------
+These are use to format a string in the output.
+
+\b  : back space
+\r  : carriage return
+\t  : horizontal tab
+\'  : single quote
+\"  : doble quote
+\/  : backward slash
+
+
+a = "Apte\bch"
+print(a)
+
+b = "Apte\rch"
+print(b)  #chte
+
+c = "Ap\ttech"
+print(c)  #Ap tech
+
+
+String Length :
+-----------------
+a = "Aptech"
+b = "Learning"
+
+print(len(a))
+print(len(b))
+
+
+Part of string :
+------------------
+a = "Aptech Learning"
+b = 'tech'
+
+print(b in a)   #True
+
+
+Loop in String :
+------------------
+a = "Aptech Learning"
+
+for i in a:
+ print(i) 
+
+for i in a:
+ print(i, end ="")  #Aptech Learning
+
+
+String Slicing : 
+------------------
+Slicing means cutting into several pieces. 
+
+In string slicing means getting a part of the string. 
+
+syntax : 
+
+string[start:stop:step]
+
+here start : starting index
+stop : stop index
+step : jump value either adding or substracting (by default 1)
+
+stop index is not considered.
+
+s = "Aptech"
+print(s[1:4]) #pte
+
+In a string, we can access each character using index and index starts from 0.
+
+s = "Aptech"
+print(s[0]) #A
+print(s[len(s)-2]) #c
+print(s[2]) #t
+print(s[6]) #error string index out of range
+
+
+slicing to get all element : 
+-------------------------------
+s = 'Aptech'
+print(s[0:6]) #Aptech
+
+s = 'Aptech'
+print(s[0:])  #Aptech
+
+s = "Aptech"
+print(s[:6])  #Aptech
+
+s = "Aptech"
+print(s[:])  #Aptech
+
+Negative Indexing : 
+---------------------
+s = "Aptech"
+print(s[-1]) #h
+print(s[-2]) #c
+
+print(s[-7]) #error string index out of range
+
+
+Slicing using negative indexing :
+------------------------------------
+s = "Aptech"
+
+print(s[-3:-1]) #ec
+
+print(s[:-1]) #Aptec
+
+print(s[-6:]) #Aptech
+
+#Write a program to print the string in reverse order using slicing ?
+
+s = "Aptech"
+# Reverse the string using slicing
+reversed_s = s[::-1]
+print(reversed_s)
+
+Modify a String :
+#======================
+lower() : to make string in lowercase
+upper() : to make string in uppercase
+strip() : to remove whitespace from beginning and end of the string
+split() : to divide the string into multiple pieces based on a character/string 
+
+
+s = 'Aptech'
+print(s.lower()) #aptech
+print(s.upper()) #APTECH
+
+
+s = '            Aptech       '
+print(s.strip()) #Aptech
+
+
+s = 'We are learning python fundamentals'
+s1 = s.split("")
+print(s1)
+
+#write a program to find number of words in a string.
+
+s = 'We are learning python fundamentals'
+s1 = s.split("")
+print(len(s1))
+
+
+concatenation of strings : 
+==============================
+a = 'Aptech'
+b = 'Learning'
+c = a+" "+b
+print(c)
+
+String Format : 
+=================================
+a = "Aptech"
+b = "we are learning python in "+a
+print(b)
+
+
+a = "Aptech"
+b = f"we are learning python in {a}"
+print(b)
+
+
+# Write a program to get following output from the string :  Aptech Learning
+
+1) aptecH learninG
+
+2) APTECh LEARNINg
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

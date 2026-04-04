@@ -1,0 +1,70 @@
+1.numeric datatype :
+----------------------
+Any number comes under numeric datatype. 
+
+If a number is a whole number with negative sign, it is called integer data type or int data type.
+
+a = 10
+b = 15
+c = -100
+print(type(a)) # <class 'int'>
+print(type(b)) # <class 'int'>
+print(type(c)) #<class 'int'>
+
+If a number having negative sign and 1 or more decimal points, it is called float data type
+
+a = 10.0
+b = 15.12
+c = -100.0
+print(type(a)) # <class 'float'>
+print(type(b)) # <class 'float'>
+print(type(c)) #<class 'float'>
+
+
+If a number is having a real part and an imaginary part, it is called complex data type
+
+a = 1+10j
+b = -2-5j
+print(type(a)) #<class 'complex'>
+print(type(b)) #<class 'complex'>
+
+
+print(a.real)
+
+
+Type Casting : Conversion of one datatype to other explicitly.
+----------------------------------------------------------------
+int() : To convert into int
+float() : To convert into float
+complex() : To convert into complex
+
+
+
+
+a+bj a -- real part
+     b -- imaginary part
+
+int  : whole number    ..... -2, -1, 0, 1, 2 ...
+float : decimal number  12.123
+complex : a+bj  = 10 + 10j
+
+
+
+decimal  <-----> binary   
+octal <------> decimal
+hexadecimal <----------> decimal
+
+
+hexadecimal <-------> decimal <--------> octal
+
+
+0---9
+0,1
+0---7
+0----9,A,B,C,D,E,F
+
+15      bin(), oct(), hex()  
+0B1111  0b1111
+0O17    0o17
+0xf     0Xf
+===========================================================

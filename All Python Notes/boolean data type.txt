@@ -1,0 +1,74 @@
+3.Boolean Datatype :
+======================
+This data type has two following values 
+1) True 2) False
+
+Example :
+---------
+a = True 
+print(type(a)) #<class 'bool'>
+
+b = False 
+print(type(b)) #<class 'bool'>
+
+c = true 
+print(type(c)) # Error 'true' is not defined
+
+d = 'true'
+print(type(c))
+
+What are Boolean?
+-------------------
+a = 10
+print(bool(a)) #True / False
+
+bool() : It is used to convert any number/str/list/tuple to Boolean
+
+int() : It is used to convert to integer
+float() : convert to float
+complex() : convert to complex
+str(): convert to string
+
+
+Note :
+--------
+Any number other than 0 are True.
+
+Any string other than ''/"" are True.
+
+Any list/tuple/set/dictionary are true except [], (), {}
+
+None is also False
+
+False : 0, '', "", [], (), {}, None
+
+
+2 < 4   : True
+2 < 4 > 5 : False
+
+if(100 < 99):
+  print('Yes')
+else: 
+  print('No')
+
+Example :
+-----------
+print(bool("hello")) # True
+
+print(bool(1909)) # True
+
+print(bool(0.00)) # False
+
+print(bool(0.000001)) #True
+
+#===================================
+isinstance() : this method checks whether a value is of a type, then return True else return False
+
+x = 10
+print(isinstance(x, int))
+
+ 
+
+
+
+

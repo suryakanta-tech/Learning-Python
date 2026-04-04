@@ -1,0 +1,287 @@
+                                           2.sequence data type (list, tuple) :
+                                           --------------------------------------
+
+a = [10, 20, 30, 40]
+b = (10, 20, 30, 40)
+
+In sequence datatype, we can store multiple values. Sequence data type is two type : list & tuple
+
+Sequences are ordered group of items/values where position and order matter.
+
+                                              list:
+                                             --------
+
+In list, we can store multiple values in a single variable using []
+
+syntax : 
+
+l = ['apple', 'banana', 'orange', 'papaya']
+print(type(l)) # <class 'list'>
+
+
+list always ordered using an index. index starts from 0 if we consider from left to right. Or index starts with -1 if consider from right to left 
+
+
+print(l[0])  #apple
+print(l[3])  #papaya
+print(l[6])  #error list index out of range
+
+print(l[-1])  #papaya
+print(l[-2]) #orange
+print(l[-4]) #apple
+print(l[-5]) #error list index out of range
+
+
+list is dynamic and mutable.
+
+l = ['apple', 'banana', 'orange', 'papaya']
+
+l[0] = 'grapes'
+
+print(l)
+
+
+methods used in list : 
+-----------------------
+len() : It will give you, the number of values stored in it.
+
+l = ['apple', 'banana', 'orange', 'papaya']
+
+print(len(l)) # 4
+
+
+append() : We can add a new value to the list. The new value will be added at the end.
+
+
+l = ['apple', 'banana', 'orange', 'papaya']
+l.append('grapes')
+print(l)
+
+insert() : We can insert a new value to a specific position.
+
+l = ['apple', 'banana', 'orange', 'papaya']
+l.insert(2, 'grapes')
+print(l)
+
+
+remove() : We can delete a value from the list
+
+l = ['apple', 'banana', 'orange', 'papaya']
+
+l.remove('banana')
+
+print(l)
+
+
+pop() : It will remove last item and return it.
+
+
+l = ['apple', 'banana', 'orange', 'papaya']
+
+a = l.pop()
+
+print(a)
+
+print(l)
+
+
+sort() : It will sort the values in an order
+
+l = ['apple',  'orange', 'papaya', 'banana']
+l.sort()
+print(l)
+
+reverse() : It will print values in reverse order
+
+
+l = ['apple',  'orange', 'papaya', 'banana']
+l.reverse()
+print(l)
+
+
+List slicing : 
+-----------------
+[start:stop:step]  whenever step is not mentioned, then by default step =1
+                   whenever start is not mentioned, then by default start =0
+                   whenever stop is not mentioned, then by default stop = last index
+
+                   whenever start, stop is not mentioned, then by default start = 0, stop = last index
+
+ 
+
+
+start : starting index 
+stop : end index (exclude)
+step : jump
+
+l = ['apple',  'orange', 'papaya', 'banana']
+
+l[1:3] # ['orange', 'papaya']
+
+
+l[:3] # ['apple',  'orange', 'papaya']
+
+l[1:] # ['orange', 'papaya', 'banana']
+
+
+print(l[-3:-1]) 
+
+print(l[:]) #['apple',  'orange', 'papaya', 'banana']
+
+
+print(l[::-1])
+
+
+#=====================================================================
+
+Program : 
+
+1) Write a program to reverse a list.
+
+2) Write a program to find square of each elements of a list and return another list.
+
+l = [1, 3, 5, 4, 6]
+
+3) Write a program to find average of elements/ int values present in a list.
+
+4) Write a program to clone / copy a list.
+
+a = [1,2 ,3 , 4, 5]
+b = a.copy()
+print(b)
+
+5) Write a program to find second highest number in a list. 
+
+
+
+https://www.geeksforgeeks.org/python/python-list-exercise/
+
+                                                     tuple :
+                                                    ---------
+It is same as list which means tuple is ordered, but not mutable. It store multiple data in a variable
+a = 10
+a = 26
+a = [10, 26]
+
+syntax :
+----------
+a = (10, 20)
+print(type(a)) #<class 'tuple'>
+
+a = tuple([10, 20])
+print(type(a)) #<class 'tuple'>
+
+a = tuple((10, 20))
+print(type(a)) #<class 'tuple'>
+
+#How to access tuple values?
+--------------------------------
+We can access the values in a tuple using index like list.
+
+index starts from 0 (left to right)
+index starts with -1(right to left)
+
+a = (10, 20, 30, 40, 50)
+
+print(a[0]) # 10
+print(a[1]) # 20
+print(a[2]) # 30
+print(a[3]) # 40
+print(a[4]) # 50
+print(a[5]) # Error Indexerror tuple index out of range
+
+print(a[-1]) # 50
+print(a[-2]) # 40
+print(a[-3]) # 30
+print(a[-4]) # 20
+print(a[-5]) # 10
+print(a[-6]) # Error Indexerror tuple index out of range
+
+
+
+# list is mutable whereas tuple is immutable
+
+a = [10, 20, 30, 40, 50]
+a[0] = 60
+print(a)
+
+#========================
+
+a = (10, 20, 30, 40, 50)
+a[0] = 60
+print(a)
+
+#===============================
+
+a = [10, 20, 30, 40, 50]
+a.append(60)
+print(a)
+
+#===============================
+
+a = (10, 20, 30, 40, 50)
+a.append(60)
+print(a)
+
+#==========================================================
+
+tuple slicing :
+-----------------
+a = (10, 20, 30, 40, 50)
+a[start:stop:step]
+a[1:3] #(20, 30)
+a[:3] # (10, 20, 30)
+a[1:] # (20, 30, 40, 50)
+
+print(a[-3:-1]) # (30, 40)
+print(a[:]) # (10, 20, 30, 40, 50)
+print(l[::-1]) # (50, 40, 30, 20, 10)
+
+
+methods used in tuple :
+-------------------------
+len() : 
+sorted() :
+reversed() :
+
+count() : This will give no of times an element present in the list
+
+
+ a = (1, 2, 2, 3, 2, 3, 4, 5)
+
+ print(a.count(2)) #3
+
+
+
+index()  : this will give the first index of an element
+
+a = (1, 2, 2, 3, 2, 3, 4, 5)
+
+print(a.index(2)) #1
+
+
+                                                       range() :
+                                                      -----------
+It is a function. It is used to generate sequence of number.
+
+range(s, s, s)
+
+s : start (by default 0, when it is not mentioned)
+s : stop (exclude)
+s : step (by default 1, when it is not mentioned)
+
+
+range(10) : 0.....9
+range(1, 10) : 1....9
+range(1, 10, 2) : 1, 3, 5, 7
+
+
+100.... 50
+
+a = range(100, 50, -1)
+
+
+
+
+
+

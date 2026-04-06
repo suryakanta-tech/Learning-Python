@@ -1,0 +1,168 @@
+Operator : 
+============
+The operator performs an operation on operand(s)
+
+There are following types operators:
+---------------------------------------
+1) Arithmetic Operators 
+2) Assignment Operators
+3) Logical Operators
+4) Comparison Operators
+5) Identity Operators
+6) Membership Operators
+7) Bitwise Operators
+
+
+1) Arithmetic :
+-----------------
+* Addition +
+* Subtraction -
+* Multiplication *
+* Division /
+* Modulus %
+* Floor Division //
+* Exponent **
+
+example :
+----------
+a = 10
+b = 5
+
+print(a+b) #15
+print(a-b) #5
+print(a*b) #50
+print(a/b) #2.0
+print(a%b) #0
+print(a//b)#2
+print(a**b) #100000
+
+Differentiate between division and Floor Division ?
+-----------------------------------------------------
+
+
+2) Assignment :
+----------------
+* Equal to =
+* +=
+* -=
+* *=
+* /=
+* %=
+* //=
+* **=
+
+a = 10
+a += 5  => a = a+5  #15
+a -= 5  => a = a-5  #10
+a *= 5  => a = a*5  #50
+a /= 5  => a = a/5  #10.0
+a //=5  => a = a//5 #2.0
+a **=5  => a = a**5 #32
+
+3) Logical operator
+---------------------
+* AND
+* OR
+* NOT
+
+a = 10
+b = 5
+print(a AND b)
+
+T & T = T   10 and 5
+T & F = F
+F & T = F
+F & F = F
+
+T || T = T   10 or 5
+T || F = T
+F || T = T
+F || F = F
+
+!True
+!False
+
+
+a = 10
+
+a >=5 and a<= 10  = True 
+a >=5 or a<10 = True
+
+(a >=5 and a <=10) and a>100   = False
+(a >=5 and a <=10) or a>100   = True
+     
+
+4.Comparison Operator:
+------------------------
+==
+>
+<
+>=
+>=
+!=
+
+5 == 5 :True
+5 == 5.0 :True
+
+5.Identity Operator:
+----------------------
+is
+is not
+
+5 is 5 : True
+5 is 5.0 : False
+
+
+6.Membership Operator :
+---------------------------
+in
+
+not in
+
+l = [1, 2, 3, 5]
+
+3 in l
+4 in l
+
+7.Bitwise Operator
+--------------------
+&  Bitwise AND
+|  Bitwise OR  
+~  Bitwise Not
+^  Bitwise Xor
+
+ 
+10 & 5  = 1010 & 0101  =   0000 = 0 
+
+1010
+ 101
+=======
+10 | 5  = 1010 | 0101  =   1111
+
+
+XOR : 10 ^ 5  ===  1 if both are different, 0 if both are same
+      1010 ^ 0101
+      0101
+      1111 = 15
+
+>>  : righthsift  
+<<  : leftshift   
+
+10 << 2  = 101000 = 2**5+2**3 = 32+8 = 40
+10 >> 2  = 001010 = 2**1+2**3 = 2+8 = 10
+
+3 << 2  = 12
+3 >> 2  = 3
+
+
+
+
+
+
+
+  
+
+
+
+
+ 

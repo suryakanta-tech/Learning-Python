@@ -1,0 +1,30 @@
+File handling in Python :
+=============================
+There are several python in-built function to perform read, write & delete operation on a file.
+These methods are basically used for handling files without help of any external module.
+
+methods :
+-----------
+open()
+write()
+remove()
+close()
+
+there are several modes :
+---------------------------
+r : read
+w : write
+a : append
+x : create
+
+these modes are used only in open method.
+
+e.g:
+-----
+f = open(name of file, mode)
+
+f.close()
+
+ 
+
+

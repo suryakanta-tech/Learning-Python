@@ -1,0 +1,130 @@
+Dictionary :
+================
+It is the data structure where we store data in key, value pair.
+
+syntax :
+----------
+students = { 
+"name" : "ABCD",
+"age" : 25
+}
+print(type(students)) #<class 'dict'>
+
+#------------------------------------------------
+
+students = dict(name = "Student1", age = 23)
+print(type(students)) #<class 'dict'>
+
+Dict is ordered, changeable and unique :
+-------------------------------------------
+Dict is Ordered because the data stored in dict can be access using following.
+
+keys() : To get all the keys
+values() : To get all the values
+items() :  To get (key, value) pair 
+get() : To get value using key name
+
+
+
+
+students = { 
+"name" : "ABCD",
+"age" : 25
+}
+
+print(students.keys()) 
+
+Dict is changeable :
+---------------------
+We can change the value of a key. Also we can add / remove a key, value pair.
+
+
+students = {
+"name" : "ABCD",
+"age" : 25
+}
+
+students['name'] = "PQRS"
+
+print(students)
+
+#--------------------------------
+students = {
+"name" : "ABCD",
+"age" : 25
+}
+
+students['course']= "Python"
+print(students)
+
+Dict is Unique :
+------------------
+Dict does not allow duplicate keys, but we can have duplicate values for different keys.
+
+students = {
+"name" : "ABCD",
+"age" : 25,
+"age" : 30
+}
+print(students)
+
+
+students = {
+"name" : "ABCD",
+"age" : 25,
+"mark" : 25
+}
+print(students)
+
+
+#=========================================================
+ 
+A dict can contain list, tuple, set and another dict.
+
+
+students ={
+
+   0 : {
+      "name" : "ABCD",
+      "age" : 23,
+      "course" : ["Python", "MySQL", "POWER BI"]
+   },
+   1 : {
+      "name" : "PQRS",
+      "age" : 25,
+      "course" : ["Python", "MySQL"]
+   } 
+
+}
+
+Methods used in dict :
+------------------------
+update() : To add a key, value pair to a dict
+pop() : To remove a key and return its value
+del : To delete the dict from memery
+clear() : To clear all the items from the dict and make it blank one
+
+
+students = {
+"name" : "ABCD",
+"age" : 25
+}
+
+students.update({"course" : "Python"})
+print(students)
+
+#-----------------------------------------------
+
+students = {
+"name" : "ABCD",
+"age" : 25
+}
+
+students.pop('age')
+print(students)
+
+
+
+
+
+

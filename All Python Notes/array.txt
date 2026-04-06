@@ -1,0 +1,67 @@
+Array : 
+==========
+It stores elements in multi-dimension/ multiple matrix 
+
+We create an array using array()
+----------------------------------
+v <- 1:24
+arr <- array(v, dim=c(2, 3, 4))
+print(arr)
+
+
+How to access the elements :
+-------------------------------
+We can access element using index.
+
+example :
+----------
+v <- 1:24
+
+arr <- array(v, dim=c(2, 3, 4))
+
+arr[2, 3, 3]  
+
+arr[c(1),2,4] 
+
+How to find dim :
+-------------------
+v <- 1:24
+
+arr <- array(v, dim=c(2, 3, 4))
+
+dim(arr)
+
+How to find number items :
+-----------------------------
+v <- 1:24
+
+arr <- array(v, dim=c(2, 3, 4))
+
+length(arr)
+
+
+loop in array :
+-----------------
+v <- 1:24
+
+arr <- array(v, dim=c(2, 3, 4))
+
+for(i in arr){
+  print(i)
+}
+
+How to check an item present in array :
+-------------------------------------------
+v <- 1:24
+
+arr <- array(v, dim=c(2, 3, 4))
+
+if(2 %in% arr){
+  print('Yes')
+}else{
+  print('No')
+}
+
+
+
+

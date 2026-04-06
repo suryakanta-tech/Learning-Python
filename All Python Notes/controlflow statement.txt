@@ -1,0 +1,135 @@
+if statement :
+=================
+
+syntax : 
+---------
+if condition:
+ statement1
+ statement2
+ statement3
+statement4
+
+
+Here from Indentation, we know statement1, statement2, statement3 are inside if block
+statement4 is outside of the if block
+
+
+Here condition == True, statement1, statement2, statement3 will execute
+     condition == False, statement1, statement2, statement3 will not execute
+
+But statement4 will be executed either condition is True/ False
+
+
+Example :  
+----------
+Write a program to enter your name, If name is Ram, the print Hello Ram.
+
+name = input("Enter your name : ")
+if name == "Ram" :
+  print("Hello", name)
+
+
+if else statement:
+===================
+
+syntax :
+---------
+if condition:
+  statement1
+  statement2
+else:
+  statement3
+  statement4
+statement5
+
+Here statement1, statement2 are inside if block
+     statement3, statement4 are inside else block
+     statement5 is outside of if else block
+
+then condition == True, statement1, statement2 will execute 
+     condition == False, statement3, statement4 will execute
+
+statement5 will be executed either condition is True or False.
+
+
+Example : Write a program to enter your name, If name is Ram, the print Hello Ram otherwise print Hello Guest.
+
+
+name = input("Enter your name : ")
+
+if name == 'Ram':
+  print("Hello",  name)
+else:
+  print("Hello Guest")
+
+
+if elif ... else statement :
+===============================
+
+syntax :
+----------
+if condition1:
+  statement1
+elif conditon2:
+  statement2
+elif condition3:
+  statement3
+else:
+  statement4
+
+Here 
+
+statement1 will execute, when condition1 is True, rest will be skipped
+statement2 will execute, when condition2 is True & condition1 is False, rest will be skipped
+statement3 will execute, when condition3 is True & condition1, condition2 are False, rest will be skipped
+
+statement4 will execute, when condition1, condition2, condition3 are False
+
+Example :
+-----------
+Write a program and enter your mark secured in Python. Find your Grade
+
+mark >= 30, mark < 50 , Grade = C
+mark >= 50 mark < 70 , Grade = B
+mark >= 70, Grade = A
+
+mark <30 , Fail
+
+mark = int(input("Enter your mark in Python (1-100) : "))
+
+if mark >= 30 and mark < 50: 
+  print("Grade : C")
+elif mark >= 50 and mark < 70: 
+  print("Grade : B")
+elif mark >= 70 : 
+  print("Grade : A")
+else:
+  print("Fail")
+
+
+
+Question :
+-------------
+1) What will be the output?
+
+a = 10
+if a>1:
+ pass
+print('Hello')
+
+#Hello 
+
+Pass : It is the statement found in empty block. Whenever there is no statement inside a if block, generally we get error. In order to make the program run successfully, we write pass statement.
+
+
+
+
+
+
+
+
+
+
+
+
+

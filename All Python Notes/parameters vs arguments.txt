@@ -1,0 +1,71 @@
+Parameters vs Arguments  :
+==============================
+A parameter is the list of variables pass to a function definition.
+
+An argument is the actual value that is sent to the function when it is called.
+
+
+example :
+----------
+def findSum(x, y): #paraemeters
+  return x+y
+
+
+result = findSum(10, 20) # arguments
+
+print(result)
+
+Note : The number parameters in function definition must be same as no of arguments in function call. The values passed in function call will be assigned to the parameters of function definition as per their sequence.
+
+
+There are three types parameters/arguments .
+
+1) Positional Arguments
+2) Keyword Arguments
+3) Default Parameter
+
+
+1.Positional arguments :
+---------------------------
+When we call a function with arguments, those are assigned to the parameters in the function definition as per their position. 
+
+def my_function(animal, name):
+  print('I have a ', animal)
+  print('My', animal, '\'s name is ', name)
+
+my_function('dog', 'bhalu')
+
+here 'dog' is passed in the 1st position of the argument list, hence it will be assigned to the 1st parameter  of the function definition. Hence it is positional argument.
+
+
+2.Keyword Arguments : 
+----------------------
+When we call a function with arguments with key = value syntax.
+
+def my_function(animal, name):
+  print('I have a ', animal)
+  print('My', animal, '\'s name is ', name)
+
+my_function(animal = 'dog', name = 'bhalu')
+
+Notes : In keyword arguments, key name is always the parameter name of the function definition. Also the changing the position of the arguments in the function call with affect the result. And it is Keyword arguments.
+
+3.Default Parameter :
+------------------------
+we can assign default value to the parameter in the function definition. When we don't pass value in function call that default value will be used. when we pass value in the function call that value will be used in stead of default value.
+
+
+def my_function(animal, name="bhalu"):
+  print('I have a ', animal)
+  print('My', animal, '\'s name is ', name)
+
+my_function('dog')
+
+Note : default parameters always assigned from right to left.
+
+
+
+
+
+
+

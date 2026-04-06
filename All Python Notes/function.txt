@@ -1,0 +1,139 @@
+Function : 
+==============
+A function is a  block of code which is executed when it is called.
+
+syntax :
+------------
+//function definition
+def functionName(parameters):
+  body
+
+
+//function call
+functionName(arguments);
+
+
+A function may or may not return data as a result.
+
+example :
+----------
+write a function to find sum of two numbers.
+
+def findSum(x, y):
+  print("sum of {} and {} is {}".format(x,y, x+y))
+
+findSum(10, 20)
+
+
+here the function is not returning anything. The number arguments in function call is always same as number of parameter in function definition.
+
+Arguments are the values/variables passed in function call.
+
+Parameters are the variable passed in function definition.
+
+function definition is always top of the function call
+
+#============================================================
+Example : 
+-----------
+Write a function to print Hello world.
+
+def printHello():
+   print("Hello World")
+
+printHello()
+
+Example : 
+------------
+Write a function to take a name as parameter and Print Hello name.
+
+def printHello(name):
+ print("Hello", name)
+
+printHello('Ram')
+
+
+example :
+-----------
+def printHello(name):
+ print("Hello", name)
+
+x = input('Enter your name :')
+printHello(x)
+
+
+Example : 
+------------
+Write a function to take number as input and checks whether it is even or odd.
+
+def findOddEven(x):
+  if x%2==0:
+    print("{} is even".format(x))
+  else:
+    print("{} is odd".format(x))
+   
+
+
+num = int(input('Enter a number : '))
+findOddEven(num)
+
+
+Note : function name is user defined name. For best practice, it should be meaningful.
+
+
+The examples of functions written above are without return statement.
+
+def findOddEven(x):
+  if x%2==0:
+    return "even"
+  else:
+    return "odd"
+   
+num = int(input('Enter a number : '))
+result = findOddEven(num)
+print("{} is {}".format(num, result)
+
+
+In a function, return statement must be in the function definition. when we call the function, control goes to function definition and when it return, again control comes back to the calling function with a data.
+
+
+def printHello(name):
+ return "Hello"+name
+x = input('Enter your name :')
+print(printHello(x))
+
+example : 
+----------
+write a program to find sum of two numbers using return statement.
+
+def findSum(x, y):
+  return x+y
+
+result = findSum(10, 20)
+print("sum of {} and {} is {}".format(10, 20, result))
+
+#=================================================================
+
+function recursion: 
+----------------------
+When we call a function from its definition, it is called function recursion.
+
+def fun1(parameters):
+  fun1(arguments)
+
+fun1(arguments)
+
+example :
+------------
+def funPrint(num):
+   print(num)
+   if num >0:
+    funPrint(num-1)
+
+funPrint(10)
+
+
+
+
+
+

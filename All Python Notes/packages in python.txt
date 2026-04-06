@@ -1,0 +1,54 @@
+Packages : 
+=============
+Packages is a group of python files. In each python file in a package there may be one or more functions written in it.
+
+
+How to install a package ?
+----------------------------
+PIP : Python Package Installer
+
+example : 
+----------
+PIP install packageName (to install a package)
+
+PIP list (To check a package is installed or not)
+
+eg. NumPy, Panda, Matplotlib etc.
+
+
+Module : 
+----------
+It is a python file where we have several functions, variables are written.
+
+e.g. 
+------
+pyplot, random, os etc 
+
+
+import pyplot from matplotlib
+
+from matplotlib import pyplot
+
+import matplotlib.pyplot
+
+How to create a own custom module :
+-------------------------------------
+
+hello.py 
+#==============
+def greet(name):
+  print('Hello', name)
+
+showhello.py
+#===================
+import hello
+hello.greet('Aptech')
+
+Exercise:
+----------
+#create a module which has following methods
+add(x,y)
+substract
+multiply
+division
+and create anothere file to import the module and find sum, difference, multiplication and division of any two numbers

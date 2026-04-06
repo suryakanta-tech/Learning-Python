@@ -1,0 +1,41 @@
+Transfer statement  : 
+=======================
+
+break : 
+--------
+This statement stops execution of loop. So the break statement always takes the control out of the loop.
+
+syntax : 
+---------
+for i in range(100):
+  print('Hello')
+  if i==10:
+    break
+
+example :
+-----------
+for c in 'Aptech Learning':
+ print(c)
+ if c == ' ':
+   break
+
+
+continue : 
+------------
+This statement skips the execution of current iteration and starts next iteration.
+
+
+for i in range(10):
+  if i == 3:
+   continue
+  print(i, end = " ")
+
+
+loop with else block :
+---------------------------
+else block will execute after loop finished.
+
+for i in range(10):
+  print(i)
+else:
+  print('End')

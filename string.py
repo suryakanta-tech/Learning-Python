@@ -126,6 +126,125 @@ s = "This is Python Programming."
 print(s.index('thon',0,25))
 # print(s.index('thy'))
 
+# 21.rindex(str,beg = 0,end = len(string)) {Same as index but searches backward in a string.}
+s = "This is Python Programming."
+print(s.rindex('thon',0,25))
+# print(s.rindex('thy'))
+
+# 22.startswith(suffix, beg = 0, end = len(string)) {It returns True if  the string begins with the
+# specified suffix, otherwise return False.}
+s = "Pythin Programming is Fun!"
+print(s.startswith('Pro',5,25))
+print(s.startswith('Pro',7,25))
+
+# 23.endswith(suffix, beg = 0, end = len(string)) {It returns True if the strings end with the
+# specified suffix, otherwise return False.}
+s = "Python Programming is Fun!"
+print(s.endswith('ing',5,25))
+print(s.endswith('ing',5,18))
+
+# 24.isdecimal() {Returns True if a unicode string contains only decimal characters and False otherwise.
+# To define a string as unicode string,prefix 'u' to the front of the quotation mark.}
+s = u"This is Python 1234"
+print(s.isdecimal())
+s = "Python"
+print(s.isdecimal())
+s = u"1234"
+print(s.isdecimal())
+
+# 25.isalpha() {Returns True if string has at least 1 character and all characters are alphabetic and False otherwise.}
+s = "Python 1234"
+print(s.isalpha())
+s = "1234"
+print(s.isalpha())
+s = "Python"
+print(s.isalpha())
+
+# 26.isalnum() {Returns True if string has at least 1 character and all characters are 
+# alphanumeric and False otherwise.}
+s = "Python1234***"
+print(s.isalnum())
+s = "Python1234"
+print(s.isalnum())
+
+# 27.isdigit() {Returns True if string contains only digits and False otherwise.}
+s = "***Python1234"
+print(s.isdigit())
+s = "Python1234"
+print(s.isdigit())
+s = "124"
+print(s.isdigit())
+
+# 28.islower() {Returns True if string has at least 1 cased character and all cased 
+# character are in lowercase and False otherwise.}
+s = "Python Programming."
+print(s.islower())
+s = "python Programming."
+print(s.islower())
+s = "python programming."
+print(s.islower())
+
+# 29.isupper() {Returns True if string has at least 1 cased character and all cased 
+# character are in uppercase and False otherwise.}
+s = "python programming."
+print(s.isupper())
+s = "Python programming."
+print(s.isupper())
+s = "PYTHON PROGRAMMING."
+print(s.isupper())
+
+# 30.isnumeric() {Returns True if a unicode string contains only numeric characters and False otherwise.}
+s = "Python12344"
+print(s.isnumeric())
+s = "12345"
+print(s.isnumeric())
+
+# 31.isspace() {Returns True if string contains only whitespace characters and False otherwise.}
+s = "Python Programming."
+print(s.isspace())
+s = "  "
+print(s.isspace())
+
+# 32.istitle() {Returns True if string is properly 'titlecased' and False otherwise.Title case means each 
+# word in a sentence begins with uppercase letter.}
+s = "Pythin programming."
+print(s.istitle())
+s = "Python Programming."
+print(s.istitle())
+
+# 33.expandtabs(tabsize=8) {It returns a copy of the string in which tab character ie.'\t' are expanded
+# using spaces using the given tabsize.The default tabsize is 8.}
+s = "Python\tProgramming\tis\tfun."
+print(s.expandtabs())
+s = "Python\tProgramming\tis\tFun."
+print(s.expandtabs(10))
+
+# 34.join(seq) {Returns a string in which the string elements of sequence have been joined by a separetor.}
+s = "_"
+seq = ('Python','Programming.')
+print(s.join(seq))
+s = "+"
+seq = ("Python "," Programming")
+print(s.join(seq))
+
+# 35.split(str = "",num = string.count(str)) {Returns a list of all the words in the string, using str as the
+# separator (splits on all whitespace if left unspecified),optionally limiting the number of splits to num.}
+s = "Python Programmin is Fun."
+print(s.split(' '))
+s = "Python Programmin is Fun."
+print(s.split('*'))
+s = "Python Programmin is Fun."
+print(s.split(' ',2))
+
+# 36.splitlines(num = string.count('\n')) {Split string at all (or num) NEWLINEs and returns a list of each line with
+# NEWLINEs removed.If num is specified,it is assumed that line breaks need to be included in the lines.}
+s = "Python\nProgramming\nis\nFun."
+print(s.splitlines())
+print(s.splitlines(0))
+print(s.splitlines(1))
+
+
+
 
 
 
